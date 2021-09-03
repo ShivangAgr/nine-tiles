@@ -43,6 +43,7 @@ const Welcome = ({ setSelectedNumber }) => {
         value={input}
         maxLength={1}
         placeholder="Enter Number"
+        placeholderTextColor="#aaa"
         keyboardType="numeric"
       />
 

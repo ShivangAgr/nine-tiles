@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { SafeAreaView, ScrollView } from 'react-native';
 
 import Game from './src/screens/Game';
@@ -16,13 +16,10 @@ const App = () => {
   // stores the selected number from input
   const [selectedNumber, setSelectedNumber] = useState(false);
 
-  useEffect(() => {
-    console.log('App');
-  });
-
   return (
     <SafeAreaView style={{ flex: 1 }}>
-      <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+      <ScrollView
+        contentContainerStyle={{ flexGrow: 1, backgroundColor: '#f7f7f7' }}>
         {selectedNumber ? (
           <Game
             correctNumber={selectedNumber}
