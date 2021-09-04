@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 32,
   },
   H1: {
-    fontSize: 36,
+    fontSize: 32,
     fontWeight: '700',
     marginBottom: 24,
     textAlign: 'center',
